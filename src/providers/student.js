@@ -1,24 +1,14 @@
+const Student = require('../../models/student')
+
+
 
 exports.getStudents = async function () {
-  return [
-    {
-      name: 'k',
-      age: 27
-    },
-    {
-      name: 'a',
-      age: 18
-    }
-  ]
+  return await Student.find({}).exec()
 }
 
 exports.queryByStudentName = async function (name) {
-  switch (name) {
-    case 'Tom':
-      return 'Tom'
-    case 'Jerry':
-      return 'Jerry'
-    default: 
-    return 'miaomiaomiao'
+  const criteria = {
+    name
   }
+  return await Student.find(criteria).exec()
 }

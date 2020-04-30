@@ -1,8 +1,8 @@
-exports.defaults = {
-  mongoUrl: '127.20.20.146',
+exports.config = {
+  mongoUrl: 'mongodb://127.20.20.146:27017/school',
   mongoOptions: {
-    user,
-    pass,
+    user: '',
+    pass: '',
     useNewUrlParser: true,
     useUnifiedTopology: true,
   }

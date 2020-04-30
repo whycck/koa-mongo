@@ -39,4 +39,4 @@ class MongoDB {
 
 }
 
-export default MongoDB
+module.exports = MongoDB

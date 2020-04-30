@@ -5,7 +5,7 @@ const onerror = require('koa-onerror')
 const bodyParser = require('koa-bodyparser')
 
 const MongoDB = require('./mongo')
-const config = require('./config')
+const { config } = require('./config')
 
 const app = new Koa()
 const router = new Router()
